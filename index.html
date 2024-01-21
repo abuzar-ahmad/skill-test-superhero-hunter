@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" id="root" color-scheme="light">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    
+    <!-- Page Title -->
+    <title>Superhero Hunter</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Crypto JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="flex-col">
+
+    <!-- Navbar -->
+    <nav class="flex-row navbar">
+        <!-- Site Icon and Name -->
+        <div class="flex-row navbar-brand">
+            <a href="./index.html">
+                <span>Superhero Hunter</span>
+            </a>
+        </div>
+        <!-- Favourites Button -->
+        <div class="flex-row favAndTheme-btn">
+            <a class="flex-row link-to-different-page" href="./favorites.html">
+                <button class="btn fav-btn">Favourites</button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Search Bar and Search Results -->
+    <div class="flex-col searchBar-items">
+        <!-- Search Bar Container -->
+        <div class="search-bar-container" class="flex-row">
+            <div class="search-icon-container"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input id="search-bar" type="text" autocomplete="off" placeholder="Enter Superhero Name">
+        </div>
+        <!-- Search Results List -->
+        <ul class="flex-col" id="search-results"></ul>
+    </div>
+
+    <!-- Toasts for notifying user that character is added or removed from favourites -->
+    <span data-visiblity="hide" class="fav-toast">Added to Favourites</span>
+    <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+
+    <!-- External Script file -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
