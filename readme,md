@@ -4,3 +4,19 @@ Hosted link : https://abuzar-ahmad.github.io/skill-tes
 t-superhero-hunter/
 
 folder structure 
+
+css
+  favorites.css
+  more-info.css
+  styles.css
+js
+  favorites.js
+  more-info.js
+  styles.js
+favorites.html
+more-info.html
+styles.html
+
+to run the code you have to open index.html file in terminal
+and and click on go live button.
+  
